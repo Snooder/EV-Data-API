@@ -13,7 +13,7 @@ def scrape_ev_data():
 
         if response.status_code == 200:
             ev_data_cache.clear()
-            ev_data_cache.extend(response.json())  # Store the full dataset
+            ev_data_cache.extend(response.json())
             logger.info(f"Successfully scraped {len(ev_data_cache)} records of EV data.")
         else:
             logger.error(f"Failed to fetch data from the source. Status code: {response.status_code}")
