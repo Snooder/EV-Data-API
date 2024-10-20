@@ -1,6 +1,11 @@
 # EV Data API
 
-## Quick Review and Recap
+Thank you for visiting, let's get to work building something great!
+
+“The technology you use impresses no one. The experience you create with it is everything.”
+— Sean Gerety
+
+## Quick Review
 
 1. **`main.py`**: I began by setting up a FastAPI application in `main.py`. This file is responsible for initializing the app, registering routes, and configuring the startup events to load the data.
   
@@ -24,12 +29,6 @@ For the API itself, we could add more safe guards and important workflows as we 
 - Secure the API by requiring users to authenticate via API keys, controlling access and usage
 - Ensure that incoming data is properly validated to prevent invalid entries and improve API reliability
 - Secure the API by enforcing HTTPS and adding security headers to prevent common vulnerabilitie
-
-Thank you for reading, let's get to work building something great!
-
-“The technology you use impresses no one. The experience you create with it is everything.”
-— Sean Gerety
-
 
 ### User Manual
 
