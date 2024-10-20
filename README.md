@@ -1,5 +1,4 @@
 # EV Data API
-
 Thank you for visiting, let's get to work building something great!
 
 “The technology you use impresses no one. The experience you create with it is everything.”
@@ -148,6 +147,9 @@ The server will be accessible at `http://localhost:8000`.
       ]
     }
     ```
+
+## Data Source
+https://data.wa.gov/resource/f6w7-q2d2.json
 
 ## License
 
