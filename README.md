@@ -34,8 +34,17 @@ Alternatively, you can use **Uvicorn**:
 uvicorn main:app --reload --port 8000
 ```
 
+## Testing the Server
 
-The server will be accessible at `http://localhost:8000`.
+FastAPI Generated Docs, navigate to
+```bash
+http://localhost:8000/docs
+```
+
+Make requests to `http://localhost:8000/evdata/{year}`.
+```bash
+curl http://localhost:8000/evdata/2024
+```
 
 ## Available Routes
 
