@@ -1,34 +1,6 @@
 # EV Data API
 Thank you for visiting, let's get to work building something great!
 
-“The technology you use impresses no one. The experience you create with it is everything.”
-— Sean Gerety
-
-## Project Recap
-
-1. **`main.py`**: I began by setting up a FastAPI application in `main.py`. This file is responsible for initializing the app, registering routes, and configuring the startup events to load the data.
-  
-2. **`routes/routes.py`**: Next, we defined the API endpoint in `routes.py` to handle requests for querying EV data by year. I ensured that the `year` could be passed as a path parameter and added support for a `verbose` query option.
-  
-3. **`ev_utils/ev_scraper.py`**: I then created a data scraper in `ev_scraper.py` to pull the latest EV data from a public API, storing it in memory to serve requests quickly without re-fetching data.
-
-4. **`ev_utils/ev_evaluator.py`**: This file handles the logic of filtering the EV data by year and calculating metrics like the total number of cars and their average electric range, grouped by make.
-
-5. **`ev_utils/logger.py`**: Finally, I added logging functionality in `logger.py` to track requests, errors, and data scraping activities, ensuring smooth operation and easy debugging.
-
-Afterwards, the future of this API has many areas that can be improved:
-- In terms of user functionality, we can showcase a lot more filter functionality such as vehicle price ranges, battery capacity, and specific makes or models.
-- Integrating multiple data sources could provide even more accurate insights for users.
-- Build a user-facing dashboard with data visualizations to enhance user interaction and insights from the API :D
-
-For the API itself, we could add more safe guards and important workflows as we collect more data.
-- Use async calls to fetch data without blocking operations, improving response times and scalability.
-- Ensure code quality and prevent bugs by implementing thorough unit and integration tests
-- Prevent abuse by limiting the number of API requests from users over a certain period.
-- Secure the API by requiring users to authenticate via API keys, controlling access and usage
-- Ensure that incoming data is properly validated to prevent invalid entries and improve API reliability
-- Secure the API by enforcing HTTPS and adding security headers to prevent common vulnerabilitie
-
 # User Manual
 
 This FastAPI-based web service scrapes and serves electric vehicle (EV) data. Users can query the number of cars and the average electric range by make for a given year. The service also supports a verbose mode that includes detailed car data.
@@ -150,6 +122,31 @@ The server will be accessible at `http://localhost:8000`.
 
 ## Data Source
 https://data.wa.gov/resource/f6w7-q2d2.json
+
+## Project Recap
+
+1. **`main.py`**: I began by setting up a FastAPI application in `main.py`. This file is responsible for initializing the app, registering routes, and configuring the startup events to load the data.
+  
+2. **`routes/routes.py`**: Next, we defined the API endpoint in `routes.py` to handle requests for querying EV data by year. I ensured that the `year` could be passed as a path parameter and added support for a `verbose` query option.
+  
+3. **`ev_utils/ev_scraper.py`**: I then created a data scraper in `ev_scraper.py` to pull the latest EV data from a public API, storing it in memory to serve requests quickly without re-fetching data.
+
+4. **`ev_utils/ev_evaluator.py`**: This file handles the logic of filtering the EV data by year and calculating metrics like the total number of cars and their average electric range, grouped by make.
+
+5. **`ev_utils/logger.py`**: Finally, I added logging functionality in `logger.py` to track requests, errors, and data scraping activities, ensuring smooth operation and easy debugging.
+
+Afterwards, the future of this API has many areas that can be improved:
+- In terms of user functionality, we can showcase a lot more filter functionality such as vehicle price ranges, battery capacity, and specific makes or models.
+- Integrating multiple data sources could provide even more accurate insights for users.
+- Build a user-facing dashboard with data visualizations to enhance user interaction and insights from the API :D
+
+For the API itself, we could add more safe guards and important workflows as we collect more data.
+- Use async calls to fetch data without blocking operations, improving response times and scalability.
+- Ensure code quality and prevent bugs by implementing thorough unit and integration tests
+- Prevent abuse by limiting the number of API requests from users over a certain period.
+- Secure the API by requiring users to authenticate via API keys, controlling access and usage
+- Ensure that incoming data is properly validated to prevent invalid entries and improve API reliability
+- Secure the API by enforcing HTTPS and adding security headers to prevent common vulnerabilitie
 
 ## License
 
