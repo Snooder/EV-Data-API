@@ -144,6 +144,7 @@ https://data.wa.gov/resource/f6w7-q2d2.json
 
 5. **`ev_utils/logger.py`**: Finally, I added logging functionality in `logger.py` to track requests, errors, and data scraping activities, ensuring smooth operation and easy debugging.
 
+# Next Steps...
 Afterwards, the future of this API has many areas that can be improved:
 - In terms of user functionality, we can showcase a lot more filter functionality such as vehicle price ranges, battery capacity, and specific makes or models.
 - Integrating multiple data sources could provide even more accurate insights for users.
