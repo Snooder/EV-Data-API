@@ -12,7 +12,7 @@ Available years in dataset: ['2011', '2012', '2013', '2014', '2015', '2016', '20
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-repo/ev-data-api.git
+    git clone https://github.com/Snooder/EV-Data-API.git
     cd ev-data-api
     ```
 
