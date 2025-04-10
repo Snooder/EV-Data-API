@@ -1,5 +1,4 @@
 # EV Data API
-Thank you for visiting, let's get to work building something great!
 
 # User Manual
 
